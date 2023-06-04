@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    text-align: center;
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(347, 82%, 66%, 0.959), hsla(157, 43%, 75%, 0.932));
+    background: linear-gradient(to right, hsla(347, 82%, 66%, 0.959), hsla(157, 43%, 75%, 0.932));
+    padding: 20px;
+}
+nav ul{
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0.959), hsla(34, 69%, 79%, 0.932));
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0.959), hsla(34, 69%, 79%, 0.932));
+    width: 100%;
+    list-style-type: none; 
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contenido{
+    display: flex;
+    padding: 60px;
+    background: #355C7D;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); 
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+
+}
+.articulos{
+    width: 80%;
+    border-right: 3px solid black;
+}
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.menu-secundario{
+    width: 20%;
+    margin-top: 60px;
+    font-size: 15px;
+}
+.menu-secundario a {
+    display: block; /*para que se ponga uno arriba de otro*/
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.subtitulo{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    flex-direction: column;
+
+}
+div p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+.linker{
+    color: black;
+    text-align: center;
+    display: flex;
+    font-family: 'Open Sans';
+    flex-wrap: wrap;
+}

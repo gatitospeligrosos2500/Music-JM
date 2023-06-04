@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;/*es el espacio interior*/
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;/*el tipo de letra*/
+    background: hsla(303, 100%, 11%, 0.918);/*el color de fondo*/
+    background: -webkit-linear-gradient(to right, hsla(185, 86%, 31%, 0.842), hsla(303, 100%, 11%, 0.712)); 
+    background: linear-gradient(to right, hsla(185, 86%, 31%, 0.842), hsla(303, 100%, 11%, 0.712)); 
+}
+.container{
+    max-width: 1200px;/*maximo de ancho*/
+    margin: 0 auto;/*para que no se desborde de las esquinas y este centrado*/
+}
+.header{
+        background: hsla(34, 69%, 79%, 0.966);
+        background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0.082), hsla(34, 68%, 79%, 0.116)),url(../img/inicio-1.png);
+        background: linear-gradient(to right, hsla(334, 82%, 66%, 0.055), hsla(34, 68%, 79%, 0.11)),url(../img/inicio-1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; /*la imagen cubre todo*/
+        min-height: 70vh;/*la altura minima*/
+        display: flex;/*ordenar como se muestra en la pantalla*/
+        align-items: center;/*sirve para poder centrar el contenido*/
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;/*ordenar como se muestra en la pantalla*/
+    align-items: center;
+    justify-content: space-between;/*solo centra las imagenes al div*/
+    z-index: 1000;/*para que el menu se coloque delante de cualquier elemento*/
+}
+.logo{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;/*para que se cambie a mayusculas*/
+}
+/*LOS ENLACES*/
+.menu .navbar ul li{
+    position: relative;/*que se ordene los elementos de manera relativa*/
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;/*tamaño de los enlaces*/
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 600; /*ancho de la fuente*/  
+}
+.menu .navbar ul li a:hover{
+    color: #ffffff;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+/*solo aparece cuando es responsivo*/
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*el contenido header*/
+.header-content{
+    display: flex;/*ordenar como se muestra en la pantalla*/
+    align-items: center;/*centrar las imagenes*/
+}
+.header-txt{
+    width: 70%;
+}
+.header-txt h1{
+    font-size: 120px;
+    line-height: 130px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 25px;
+}
+.header-txt p{
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 35px;
+    border-left: 1px solid #ffffff;
+    padding-left: 15px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #f491d8c8;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 25px;
+}
+.btn-1:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.header-img{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.header-img a{
+    margin-bottom: 40px;
+}
+.canciones{
+    padding: 100px 0;
+    text-align: center;
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 85px;
+    line-height: 95px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 18px;
+    color: #ffffff;
+}
+/*CONTENIDO PERSONAL*/
+.musica-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.genero-1{
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t1-r.png);
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t1-r.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;/*altura*/
+    width: 250px;/*el ancho*/
+    border-radius: 10px;/*para redondear las esquinas de las imagenes*/
+    padding: 25px;
+    margin-bottom: 20px;   
+}
+.genero-2{
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t2-e.jpg);
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t2-e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.genero-3{
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t3-rr.jpg);
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t3-rr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.genero-4{
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t4-ta.jpg);
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/t4-ta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.genero-txt h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.genero-txt p{
+    color: #e1e1e1;
+}
+/*contenido video*/
+.video{
+    padding: 150px 0;
+    background: hsla(34, 69%, 79%, 0.966);
+    background: -webkit-linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/inicio-2.jpg);
+    background: linear-gradient(to right, hsla(334, 82%, 66%, 0), hsla(34, 68%, 79%, 0)),url(../img/inicio-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.video-content{
+    display: flex;
+    align-items: center;
+}
+.video-1{
+    width: 50%;
+    padding-right: 70px;
+}
+.video-2{
+    width: 50%;
+    display: flex;
+}
+.v1{
+    width: 300px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+.v2{
+    width: 300px;
+    border-radius: 10px;
+}
+/*PIE DE PAGINA*/
+.footer-bg{
+    text-align: center;
+    padding: 100px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo-1{
+    margin-bottom: 15px;
+}
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0e0e0e;
+    border: 1px solid #13975E;
+    font-family: 'Prompt', cursive;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+textarea{
+    width: 520px !important;
+}
+
+.footer-txt{
+    text-align: center;
+    padding: 20px;
+    background-color: #0e0e0e;
+}
+
+/*cambio del la resolucion y el diseño cuando baje de los 991px*/
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #161815;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+        background: #007991d8;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #78ffd7d3, #007991e0);
+        background: linear-gradient(to right, #78ffd7d3, #007991e0);
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        flex-direction: column;
+        padding: 100px 30px 30px 30px;
+    }
+    .header-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h1{
+        font-size: 80px;
+        line-height: 90px;
+        margin-bottom: 15px;
+    }
+    .header-txt p{
+        border: 0;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .btn-1{
+        margin: 20px 0;
+    }
+    .header-img{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .header-img a{
+        margin: 0 10px;
+    }
+    .tours{
+        padding: 30px;
+    }
+    h2{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .musica-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .video{
+        padding: 30px;
+    }
+    .video-content{
+        flex-direction: column;
+    }
+    .video-1{
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .video-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .v1, .v2{
+        width: 250px;
+        margin: 0 0 20px 0;
+    }
+    .footer-br{
+        padding: 30px;
+    }
+    textarea{
+        width: 250px !important;
+    }
+    .footer-txt{
+        padding: 30px;
+    }
+    
+}
